@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency</title>
+    <style>
+    body {
+        background-color: #eff5f8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+        height: 100vh;
+    }
+    
+    .currency-container {
+        display: grid;
+        /* align-items: center; */
+        /* justify-content: center; */
+        grid-template-columns: repeat(5,auto);
+    }
+    
+    .white-box {
+        width: 496px;
+        backdrop-filter: blur(30px);
+        box-shadow: 1px 1px 10px #6391a76b;
+        background-color: #fff;
+        padding: 16px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .fetch-button {
+        height: 40px;
+        padding: 10px 20px;
+        border: 0px;
+        border-radius: 5px;
+        background-color: #6392a7;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .date {
+        color: #6392a7;
+      }
+
+      .circle {
+        width: 80px;
+        height: 80px;
+        margin: 4px;
+        margin-right: 0;
+        border-radius: 50%;
+        background-color: #78a374;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding: 16px;
+        box-sizing: border-box;
+      }
+
+      .currency-name {
+        font-weight: bold;
+        font-size: 22px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="white-box">
+      <div class="header">
+        <button class="fetch-button">Fetch Data</button>
+        <p class="date">10-13-2023</p>
+      </div>
+      <div class="currency-container">
+        <!-- ROW 1 -->
+        <div class="circle">
+          <div class="currency-name">AUD</div>
+          <div>1.6584</div>
+        </div>
+        <div class="circle">
+          <div class="currency-name">BGN</div>
+          <div>1.9558</div>
+        </div>
+        <div class="circle">
+          <div class="currency-name">BRL</div>
+          <div>5.3604</div>
+        </div>
+        <div class="circle">
+          <div class="currency-name">CAD</div>
+          <div>1.4435</div>
+        </div>
+        <div class="circle">
+          <div class="currency-name">CHF</div>
+          <div>0.9566</div>
+        </div>
+        <!-- ROW 2 -->
+        <div class="circle">
+          <div class="currency-name">CNY</div>
+          <div>7.7514</div>
+        </div>
+        <div class="circle">
+          <div class="currency-name">CZK</div>
+          <div>24.55</div>
+        </div>
+        <div class="circle">
+          <div class="currency-name">DKK</div>
+          <div>7.4562</div>
+        </div>
+        <div class="circle">
+          <div class="currency-name">EUR</div>
+          <div>1</div>
+        </div>
+        <div class="circle">
+          <div class="currency-name">BGP</div>
+          <div>0.8626</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

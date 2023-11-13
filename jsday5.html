@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phonebook</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css">
+</head>
+<body class="bg-gray-200 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <h1 class="text-2xl font-bold mb-6">Phonebook</h1>
+        <div class="input-group flex space-x-4 mb-4">
+            <input type="text" id="userName" placeholder="Name" class="w-1/2 p-2 border rounded">
+            <input type="text" id="userNumber" placeholder="Phone Number" class="w-1/2 p-2 border rounded">
+            <button onclick="submitContact()" class="w-1/4 bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition duration-300 ease-in-out">Add</button>
+            <button onclick="viewContacts()" class="w-1/4 bg-blue-500 text-white p-2 rounded hover:bg-blue-600 transition duration-300 ease-in-out">View All</button>
+        </div>
+        <ul id="contactList" class="list-none p-0"></ul>
+    </div>
+
+    <script src="./assets/js/jsday1.js"></script>
+</body>
+</html>
